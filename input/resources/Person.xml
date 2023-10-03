@@ -80,6 +80,14 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/PN"/>
       </type>
     </element>
+    <element id="Person.birthTime">
+      <path value="Person.birthTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+      </type>
+    </element>
     <element id="Person.sdtcDesc">
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>

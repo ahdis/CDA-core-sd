@@ -1,6 +1,41 @@
-### CDA Definition
+### MATCHBOX CDA definition
 
-This Implementation Guide is a representation of the [Clinical Document Architecture (CDA) R2.0 specification](https://hl7.org/cda/stds/online-navigation/index.html) using FHIR Logical Models expressed as FHIR StructureDefinition instances.  The main purpose of the guide is to support the Consolidated CDA specification which defines its templates using these logical structures.  Other CDA-based guides can also use this guide and these structures to create specifications like Consolidated CDA.
+This Implementation Guide is a representation of the [Clinical Document Architecture (CDA) R2.0 specification](https://hl7.org/cda/stds/online-navigation/index.html) using FHIR Logical Models expressed as FHIR StructureDefinition instances.  
+
+20240619: This CDA Model is derived from [HL7](https://hl7.org/cda/stds/core/) [2.0.0-sd](https://hl7.org/cda/stds/core/2.0.0-sd/)
+
+For use with matchbox the following adaptions have been made:
+
+#### IHE LAB and Pharm additions
+
+<a href="StructureDefinition-LabCriterion.html">LabCriterion</a><br />
+<a href="StructureDefinition-LabPrecondition.html">LabPrecondition</a><br />
+<a href="StructureDefinition-Material.html">Material</a><br />
+<a href="StructureDefinition-ObservationRange.html">ObservationRange</a><br />
+<a href="StructureDefinition-Person.html">Person</a><br />
+<a href="StructureDefinition-PharmContent.html">PharmContent</a><br />
+<a href="StructureDefinition-PharmIngredient.html">PharmIngredient</a><br />
+<a href="StructureDefinition-PharmMedicineClass.html">PharmMedicineClass</a><br />
+<a href="StructureDefinition-PharmPackagedMedicine.html">PharmPackagedMedicine</a><br />
+<a href="StructureDefinition-PharmSpecializedKind.html">PharmSpecializedKind</a><br />
+<a href="StructureDefinition-PharmSubstance.html">PharmSubstance</a><br />
+<a href="StructureDefinition-PharmSuperContent.html">PharmSuperContent</a><br />
+<a href="StructureDefinition-ServiceEvent.html">ServiceEvent</a><br />
+	
+#### Versionless dependency to terminology
+* see <a href="https://github.com/HL7/CDA-core-sd/pull/15">Pull Request</a>
+
+#### Australian addition
+<a href="StructureDefinition-Observation.html">CS Support in Observation.value</a>
+
+#### Austria additions
+
+hl7at extensions: <a href="StructureDefinition-ClinicalDocument.html">ClinicalDocument.terminologyDate, ClinicalDocument.formatCode, ClinicalDocument.practiceSettingCode</a>
+
+max card. changed from 1 to * for <a href="StructureDefinition-ClinicalDocument.html">ClinicalDocument.legalAuthenticator</a> and max card. changed from 1 to * <a href="StructureDefinition-CustodianOrganization.html">CustodianOrganization.telecom</a>
+
+
+### CDA definition
 
 This guide does not replace the CDA specification.  It includes the Overview, Implementation Notes, and Narrative Block information from the specification to provide context and guidance.  To understand CDA, readers should consult the actual CDA specification.  If there are any differences found between the specification and this guide, the specification takes precedence and is assumed to be correct.
 

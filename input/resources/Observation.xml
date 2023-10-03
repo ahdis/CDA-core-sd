@@ -197,6 +197,10 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+      </type>
+      <!-- matchbox CS addition https://github.com/ahdis/matchbox/issues/205 -->
+      <type>
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/CO"/>
       </type>
       <type>

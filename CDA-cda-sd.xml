@@ -98,6 +98,8 @@
 <artifact id="StructureDefinition/InformationRecipient" key="StructureDefinition-InformationRecipient" name="InformationRecipient (CDA Class)"/>
 <artifact id="StructureDefinition/InfrastructureRoot" key="StructureDefinition-InfrastructureRoot" name="InfrastructureRoot (Base Type for all CDA Classes)"/>
 <artifact id="StructureDefinition/IntendedRecipient" key="StructureDefinition-IntendedRecipient" name="IntendedRecipient (CDA Class)"/>
+<artifact id="StructureDefinition/LabCriterion" key="StructureDefinition-LabCriterion" name="LabCriterion (CDA Class)"/>
+<artifact id="StructureDefinition/LabPrecondition" key="StructureDefinition-LabPrecondition" name="LabPrecondition (CDA Class)"/>
 <artifact id="StructureDefinition/LabeledDrug" key="StructureDefinition-LabeledDrug" name="LabeledDrug (CDA Class)"/>
 <artifact id="StructureDefinition/LanguageCommunication" key="StructureDefinition-LanguageCommunication" name="LanguageCommunication (CDA Class)"/>
 <artifact id="StructureDefinition/LegalAuthenticator" key="StructureDefinition-LegalAuthenticator" name="LegalAuthenticator (CDA Class)"/>
@@ -128,6 +130,13 @@
 <artifact id="StructureDefinition/Performer1" key="StructureDefinition-Performer1" name="Performer1 (CDA Class)"/>
 <artifact id="StructureDefinition/Performer2" key="StructureDefinition-Performer2" name="Performer2 (CDA Class)"/>
 <artifact id="StructureDefinition/Person" key="StructureDefinition-Person" name="Person (CDA Class)"/>
+<artifact id="StructureDefinition/PharmContent" key="StructureDefinition-PharmContent" name="PharmContent (CDA Pharm Class)"/>
+<artifact id="StructureDefinition/PharmIngredient" key="StructureDefinition-PharmIngredient" name="PharmIngredient (CDA Pharm Class)"/>
+<artifact id="StructureDefinition/PharmMedicineClass" key="StructureDefinition-PharmMedicineClass" name="PharmMedicineClass (CDA Pharm Class)"/>
+<artifact id="StructureDefinition/PharmPackagedMedicine" key="StructureDefinition-PharmPackagedMedicine" name="PharmPackagedMedicine (CDA Pharm Class)"/>
+<artifact id="StructureDefinition/PharmSpecializedKind" key="StructureDefinition-PharmSpecializedKind" name="PharmSpecializedKind (CDA Pharm Class)"/>
+<artifact id="StructureDefinition/PharmSubstance" key="StructureDefinition-PharmSubstance" name="PharmSubstance (CDA Pharm Class)"/>
+<artifact id="StructureDefinition/PharmSuperContent" key="StructureDefinition-PharmSuperContent" name="PharmSuperContent (CDA Pharm Class)"/>
 <artifact id="StructureDefinition/Place" key="StructureDefinition-Place" name="Place (CDA Class)"/>
 <artifact id="StructureDefinition/PlayingEntity" key="StructureDefinition-PlayingEntity" name="PlayingEntity (CDA Class)"/>
 <artifact id="StructureDefinition/Precondition" key="StructureDefinition-Precondition" name="Precondition (CDA Class)"/>

@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
 	<id value="hl7.cda.uv.core"/>
 	<url value="http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core"/>
-	<version value="2.0.0-sd" />
+	<version value="2.0.0-sd-202406-matchbox-patch" />
 	<name value="ClinicalDocumentArchitecture" />
 	<title value="Clinical Document Architecture" />
 	<status value="active"/>
@@ -23,7 +23,7 @@
 	<dependsOn id="terminology">
 		<uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
 		<packageId value="hl7.terminology"/>
-		<version value="5.2.0"/>
+		<version value="5.3.0"/>
 	</dependsOn>
 	<definition>
 		<grouping id="classes">
@@ -446,6 +446,16 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/LabCriterion" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/LabPrecondition" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/LabeledDrug" />
 			</reference>
 			<groupingId value="classes"/>
@@ -587,6 +597,41 @@
 				<reference value="StructureDefinition/Person" />
 			</reference>
 			<groupingId value="classes"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmContent" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmIngredient" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmMedicineClass" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmPackagedMedicine" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSpecializedKind" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubstance" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSuperContent" />
+			</reference>
 		</resource>
 		<resource>
 			<reference>

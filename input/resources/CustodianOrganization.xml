@@ -90,7 +90,8 @@
     <element id="CustodianOrganization.telecom">
       <path value="CustodianOrganization.telecom"/>
       <min value="0"/>
-      <max value="1"/>
+      <!-- matchbox ELGA changed to *-->
+      <max value="*"/>
       <type>
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>

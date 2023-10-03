@@ -169,6 +169,51 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActStatus"/>
       </binding>
     </element>
+    <!-- matchbox ELGA hl7at:terminologyDate -->
+    <element id="ClinicalDocument.terminologyDate">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-at:v3"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="terminologyDate"/>
+      </extension>
+      <path value="ClinicalDocument.terminologyDate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <!-- matchbox ELGA hl7at:formatCode -->
+    <element id="ClinicalDocument.formatCode">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-at:v3"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="formatCode"/>
+      </extension>
+      <path value="ClinicalDocument.formatCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <!-- matchbox ELGA hl7at:practiceSettingCode -->
+    <element id="ClinicalDocument.practiceSettingCode">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-at:v3"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="practiceSettingCode"/>
+      </extension>
+      <path value="ClinicalDocument.practiceSettingCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+      </type>
+    </element>
     <element id="ClinicalDocument.effectiveTime">
       <path value="ClinicalDocument.effectiveTime"/>
       <min value="1"/>
@@ -272,8 +317,10 @@
     <element id="ClinicalDocument.legalAuthenticator">
       <path value="ClinicalDocument.legalAuthenticator"/>
       <min value="0"/>
-      <max value="1"/>
-      <type>
+      <!-- matchbox ELGA changed from 1 to *
+        based on: extension added by Nikola Tanjga, ELGA GmbH, 2020: added maxOccurs unbounded -->
+      <max value="*"/>
+        <type>
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/LegalAuthenticator"/>
       </type>
     </element>

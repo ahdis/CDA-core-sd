@@ -12,7 +12,7 @@ Description: "Identifies the representation of binary data in a text field"
 * ^experimental = false
 * include codes from system BinaryDataEncoding
 
-Alias: $AddressUse = http://terminology.hl7.org/CodeSystem/v3-AddressUse|2.1.0
+Alias: $AddressUse = http://terminology.hl7.org/CodeSystem/v3-AddressUse
 ValueSet: CDAPostalAddressUse
 Title: "CDAPostalAddressUse"
 Description: "A set of codes advising a system or user which address in a set of like addresses to select for a given purpose - limited to values allowed in original CDA definition"
@@ -32,7 +32,7 @@ Description: "A set of codes advising a system or user which address in a set of
 * include $EntityNameUse#SYL
 
 
-Alias: $CompressionAlgorithm = http://terminology.hl7.org/CodeSystem/v3-CompressionAlgorithm|2.1.1
+Alias: $CompressionAlgorithm = http://terminology.hl7.org/CodeSystem/v3-CompressionAlgorithm
 ValueSet: CDACompressionAlgorithm
 Title: "CDACompressionAlgorithm"
 Description: "Type of compression algorithm used - limited to 4 concepts from original CDA definition"
@@ -43,7 +43,7 @@ Description: "Type of compression algorithm used - limited to 4 concepts from or
 * include $CompressionAlgorithm#Z
 
 
-Alias: $EntityNameUse = http://terminology.hl7.org/CodeSystem/v3-EntityNameUse|2.1.0
+Alias: $EntityNameUse = http://terminology.hl7.org/CodeSystem/v3-EntityNameUse
 ValueSet: CDAEntityNameUse
 Title: "CDAEntityNameUse"
 Description: "A set of codes advising a system or user which name in a set of names to select for a given purpose - limited to values allowed in original CDA definition"
@@ -63,6 +63,7 @@ Description: "A set of codes advising a system or user which name in a set of na
 * include $EntityNameUse#IDE
 
 
+<<<<<<< HEAD
 Alias: $RoleClass = http://terminology.hl7.org/CodeSystem/v3-RoleClass|3.1.0
 ValueSet: CDAInformationRecipientRole
 Title: "CDAInformationRecipientRole"
@@ -73,6 +74,9 @@ Description: "Used to represent the role(s) of those who should receive a copy o
 
 
 Alias: $NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.1.0
+=======
+Alias: $NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
+>>>>>>> 7c71068 (cda matchbox update)
 ValueSet: CDANullFlavor
 Title: "CDANullFlavor"
 Description: "CDA NullFlavors - limited to values allowed in original CDA definition"
@@ -90,7 +94,7 @@ Description: "CDA NullFlavors - limited to values allowed in original CDA defini
 * include $NullFlavor#ASKU
 * include $NullFlavor#NAV
 
-Alias:       $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType|4.0.0
+Alias:       $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 ValueSet:    CDAParticipationType
 Title:       "CDAParticipationType"
 Description: "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation. Limited to values allowed in original CDA definition"
@@ -144,7 +148,7 @@ Description: "A code specifying the meaning and purpose of every Participation i
 * include ParticipationType#RESP
 * include ParticipationType#CST
 
-Alias: $PartSig = http://terminology.hl7.org/CodeSystem/v3-ParticipationSignature|2.1.0
+Alias: $PartSig = http://terminology.hl7.org/CodeSystem/v3-ParticipationSignature
 ValueSet: CDASignatureCode
 Title: "CDASignatureCode"
 Description: """A set of codes specifying whether and how the participant has attested his participation through a signature - limited to values allowed in original CDA definition.

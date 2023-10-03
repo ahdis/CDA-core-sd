@@ -1,0 +1,50 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="PharmSpecializedKind"/>
+   <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+      <valueUri value="urn:ihe:pharm"/>
+   </extension>
+   <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-container">
+      <valueUri value="http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"/>
+    </extension>
+   <url value="http://hl7.org/cda/stds/core/StructureDefinition/PharmSpecializedKind"/>
+   <name value="CDAR2.PharmSpecializedKind"/>
+   <title value="PharmSpecializedKind (CDA Pharm Class)"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="http://hl7.org/cda/stds/core/StructureDefinition/PharmSpecializedKind"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+   <derivation value="specialization"/>
+   <differential>
+      <element id="PharmSpecializedKind">
+         <path value="PharmSpecializedKind"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="PharmSpecializedKind.classCode">
+         <path value="PharmSpecializedKind.classCode"/>
+         <representation value="xmlAttr"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <defaultValueCode value="GRIC"/>
+         <fixedCode value="GRIC"/>
+         <mustSupport value="true"/>
+      </element>
+     <element id="PharmSpecializedKind.generalizedMedicineClass">
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>     
+         <path value="PharmSpecializedKind.generalizedMedicineClass"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/cda/stds/core/StructureDefinition/PharmMedicineClass"/>
+         </type>
+      </element>      
+   </differential>
+</StructureDefinition>

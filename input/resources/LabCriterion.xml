@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="LabCriterion"/>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+    <valueUri value="urn:oid:1.3.6.1.4.1.19376.1.3.2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+    <valueString value="LabCriterion"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-container">
+    <valueUri value="http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"/>
+  </extension>
+<url value="http://hl7.org/cda/stds/core/StructureDefinition/LabCriterion"/>
+  <name value="CDAR2.LabCriterion"/>
+  <title value="LabCriterion (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/LabCriterion"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="LabCriterion">
+      <path value="LabCriterion"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="LabCriterion.nullFlavor">
+      <path value="LabCriterion.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="LabCriterion.classCode">
+      <path value="LabCriterion.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OBS"/>
+
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClassObservation"/>
+      </binding>
+    </element>
+    <element id="LabCriterion.moodCode">
+      <path value="LabCriterion.moodCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="EVN.CRT"/>
+      <fixedCode value="EVN.CRT"/>
+
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMoodPredicate"/>
+      </binding>
+    </element>
+    <element id="LabCriterion.templateId">
+      <path value="LabCriterion.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="LabCriterion.code">
+      <path value="LabCriterion.code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActCode"/>
+      </binding>
+    </element>
+    <element id="LabCriterion.text">
+      <path value="LabCriterion.text"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="LabCriterion.value">
+      <path value="LabCriterion.value"/>
+      <representation value="typeAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SC"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/REAL"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/MO"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

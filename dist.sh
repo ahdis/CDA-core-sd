@@ -1,0 +1,1 @@
+cp ./output/package.tgz ../matchbox/matchbox-engine/src/main/resources/hl7.cda.uv.core#2.0.0-sd-202406-matchbox-patch.tgz
